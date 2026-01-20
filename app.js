@@ -1,4 +1,4 @@
-const URL='https://api.api-ninjas.com/v2/randomquotes'
+const URL='https://cataas.com'
 
 async function getData(){
     try{

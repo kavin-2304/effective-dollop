@@ -1,4 +1,4 @@
-const URL='http://api.football-data.org/v4/competitions/'
+const URL='https://api.api-ninjas.com/v2/randomquotes'
 
 async function getData(){
     try{

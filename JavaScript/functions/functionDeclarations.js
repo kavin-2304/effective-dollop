@@ -1,3 +1,4 @@
+//function expression 
 function fibo(n){
     let n1=0;
     let n2=1;
@@ -21,36 +22,36 @@ let sum = function(a,b){
 
 console.log(sum(1,2));
 
-//higher order function
-function multipleGreet(func,count){
-    for(i=1;i<=count;i++){
-        func();
+
+//functions objects
+let calculator={
+    add:function(a,b){
+        return a+b;
+    },
+    sub:function(a,b){
+        return a-b;
+    },
+    mul:function(a,b){
+        return a*b;
     }
 }
 
-let greet = function(){
-    console.log("Hello!..");
-}
+console.log(calculator.add(2,3));
 
-multipleGreet(greet,3);
-
-//factory functions
-function oddEvenTest(request){
-    if(request=="odd"){
-        let odd = function(n){
-            console.log(!(n%2==0));
-        }
-        return odd;
-    }else if(request=="even"){
-        let even = function(n){
-            console.log(n%2==0);
-        }
-        return even;
-    }
-    else{
-        console.log("Wrong Request")
+//this keyword in objects with functions
+let student = {
+    name:'Kavin',
+    rollNo:23,
+    marks:{
+        phy:80,
+        math:75,
+        chem:81,
+    },
+    avg:function(){
+        let avg=(this.marks.phy+this.marks.math+this.marks.chem)/3;
+        return avg;
     }
 }
 
-let func=oddEvenTest("even");
-console.log(func(4));
+let studentAvg=student.avg();
+console.log(studentAvg);

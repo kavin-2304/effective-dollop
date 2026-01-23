@@ -3,8 +3,10 @@ async function getQuote() {
     let data = await res.json();
     return data.quote;
 }
-let quote = getQuote();
-console.log(quote);     
-
 let p=document.querySelector(".text");
-p.innerText=quote;
+ async function showQuote(){
+    let quote=await getQuote();
+    p.innerText=quote;
+ }
+
+ showQuote();

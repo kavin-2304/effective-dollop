@@ -27,7 +27,7 @@ app.use(
 
 app.get("/", (req, res) => {
   req.session.isAuth = true;
-  console.log(req.session); // ✅ correct
+  console.log(req.session);
   res.send("hey its working");
 });
 

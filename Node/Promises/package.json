@@ -1,0 +1,19 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "kavin kathiriya",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "lodash": "^4.17.23",
+    "mongoose": "^9.1.5",
+    "socket-io": "^1.0.0",
+    "socket.io": "^4.8.3"
+  }
+}
